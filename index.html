@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Fahrzeugverwaltung</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fahrzeugverwaltung</h1>
+        <nav>
+            <a href="index.php?action=fahrzeugliste">Fahrzeugliste</a>
+            <form action="index.php?action=suche" method="set">
+                <input type="text" name="suchbegriff" placeholder="Kennzeichen eingeben">
+                <input type="submit" value="Suchen">
+            </form>
+            <a href="index.php?action=drucken">Drucken</a>
+        </nav>
+        <main>
+            <section id="fahrzeugliste">               
+            </section> <section id="suchen">
+            </section> <section id="drucken"></section>
+        </main>
+        <form action="index.php" method="post">
+            <h1>Auto anlegen</h1>
+            <label for="kennzeichen">Kennzeichen:</label>
+            <input type="text" name="kennzeichen" required>
+            <label for="marke">Marke:</label>
+            <input type="text" name="marke" required>
+            <label for="modell">Modell:</label>
+            <input type="text" name="modell" required>
+            <label for="kilometerstand">Kilometerstand:</label>
+            <input type="number" name="kilometerstand" required>
+            <input type="submit" name="submit" value="Fahrzeug anlegen">
+            
+    </div>
+</body>
+</html>
